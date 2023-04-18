@@ -1,7 +1,11 @@
-function removeChar(str) {
-      var whithout = "";
-    for (let i = 1; i < str.length - 1; i++) {
-      whithout =whithout+ str[i];
-    }
-    return whithout
+function updateLight(current) {
+  if (current == "green") {
+    return "yellow";
   }
+  if (current == "yellow") {
+    return "red";
+  }
+  if (current == "red") {
+    return "green";
+  }
+}
