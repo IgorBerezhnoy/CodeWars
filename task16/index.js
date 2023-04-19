@@ -1,15 +1,27 @@
-function bmi(weight, height) {
-  var index=weight/(height*height)
-  if(index<= 18.5){
-    return "Underweight"
+var humanYearsCatYearsDogYears = function (humanYears) {
+  let cat = 0;
+  let dog = 0;
+  if (humanYears == 0) {
+    cat = 0;
+  } else if (humanYears == 1) {
+    cat += 15;
+  } else if (humanYears == 2) {
+    cat += 24;
+  } else {
+    cat = 24 + (humanYears - 2) * 4;
   }
-  if(index<= 25.0 ){
-    return "Normal"
+  if (humanYears == 0) {
+    dog = 0;
+  } else if (humanYears == 1) {
+    dog += 15;
+  } else if (humanYears == 2) {
+    dog += 24;
+  } else {
+    dog = 24 + (humanYears - 2) * 5;
   }
-  if(index<= 30.0 ){
-    return "Overweight"
-  }
-  if(index > 30 ){
-    return "Obese"
-  }
+  var allYears = [];
+  allYears[0] = humanYears;
+  allYears[1] = cat;
+  allYears[2] = dog;
+  return allYears;
 };
