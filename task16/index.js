@@ -1,27 +1,26 @@
-var humanYearsCatYearsDogYears = function (humanYears) {
-  let cat = 0;
-  let dog = 0;
-  if (humanYears == 0) {
-    cat = 0;
-  } else if (humanYears == 1) {
-    cat += 15;
-  } else if (humanYears == 2) {
-    cat += 24;
+function quadrant(x, y) {
+  let cordinateX;
+  let cordinateY;
+  if (x > 0) {
+    cordinateX = true;
   } else {
-    cat = 24 + (humanYears - 2) * 4;
+    cordinateX = false;
   }
-  if (humanYears == 0) {
-    dog = 0;
-  } else if (humanYears == 1) {
-    dog += 15;
-  } else if (humanYears == 2) {
-    dog += 24;
+  if (y > 0) {
+    cordinateY = true;
   } else {
-    dog = 24 + (humanYears - 2) * 5;
+    cordinateY = false;
   }
-  var allYears = [];
-  allYears[0] = humanYears;
-  allYears[1] = cat;
-  allYears[2] = dog;
-  return allYears;
-};
+  if (cordinateX == true && cordinateY == true) {
+    return 1;
+  }
+  if (cordinateX == false && cordinateY == true) {
+    return 2;
+  }
+  if (cordinateX == false && cordinateY == false) {
+    return 3;
+  }
+  if (cordinateX == true && cordinateY == false) {
+    return 4;
+  }
+}
