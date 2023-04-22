@@ -8,3 +8,4 @@ function numberToPower(number, power) {
   }
   return numbers;
 }
+
