@@ -1,12 +1,7 @@
 function DNAtoRNA(dna) {
-    debugger
-    let rnk=""
+    let rnk = "";
     for (let i = 0; i < dna.length; i++) {
-        if (dna[i] === 'T') {
-            rnk[i] = 'U';
-        } else {
-            rnk[i]=dna[i]
-        }
+        rnk += dna[i] === 'T' ? 'U' : dna[i];
     }
     return rnk;
 }
