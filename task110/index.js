@@ -1,0 +1,1 @@
+const isOpposite=(s1,s2)=>!!(s1.trim() && s2.trim() && s1.toLowerCase() === s2.toLowerCase())
