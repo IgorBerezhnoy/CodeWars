@@ -1,0 +1,1 @@
+const sayHello=( name, city, state )=>`Hello, ${name.map(el=>el)}! Welcome to ${city}, ${state}!`
