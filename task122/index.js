@@ -16,7 +16,3 @@ for (let i = 0; i <= 99; i++) {
 console.log(arrOfDoors);
 arrOfDoors = arrOfDoors.filter(el => el.isOpen);
 console.log(arrOfDoors);
-
-// boxIng
-//values freeze
-// методы объекты
