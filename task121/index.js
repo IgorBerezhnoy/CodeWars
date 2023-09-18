@@ -20,3 +20,7 @@ console.log(arrOfDoors);
 // boxIng
 //values freeze
 // методы объекты
+//htpp протоколы
+
+//options
+//cors
